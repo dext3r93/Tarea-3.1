@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Estructura semántica de HTML5</title>
+  <desc id="descripcion">Diagrama con las áreas header, nav, main, section, article y footer.</desc>
+  <rect width="900" height="560" rx="24" fill="#f4f7f8"/>
+  <rect x="40" y="35" width="820" height="80" rx="12" fill="#0f4c5c"/>
+  <text x="450" y="85" fill="#ffffff" font-family="Arial" font-size="30" text-anchor="middle">&lt;header&gt;</text>
+  <rect x="40" y="130" width="820" height="55" rx="10" fill="#e36414"/>
+  <text x="450" y="166" fill="#ffffff" font-family="Arial" font-size="25" text-anchor="middle">&lt;nav&gt;</text>
+  <rect x="40" y="200" width="820" height="245" rx="14" fill="#dbe9ee" stroke="#0f4c5c" stroke-width="3"/>
+  <text x="450" y="235" fill="#0f4c5c" font-family="Arial" font-size="26" text-anchor="middle">&lt;main&gt;</text>
+  <rect x="70" y="260" width="360" height="145" rx="10" fill="#ffffff" stroke="#e36414" stroke-width="3"/>
+  <text x="250" y="320" fill="#0f4c5c" font-family="Arial" font-size="25" text-anchor="middle">&lt;section&gt;</text>
+  <text x="250" y="360" fill="#52616b" font-family="Arial" font-size="19" text-anchor="middle">Contenido relacionado</text>
+  <rect x="470" y="260" width="360" height="145" rx="10" fill="#ffffff" stroke="#e36414" stroke-width="3"/>
+  <text x="650" y="320" fill="#0f4c5c" font-family="Arial" font-size="25" text-anchor="middle">&lt;article&gt;</text>
+  <text x="650" y="360" fill="#52616b" font-family="Arial" font-size="19" text-anchor="middle">Contenido independiente</text>
+  <rect x="40" y="460" width="820" height="65" rx="10" fill="#082f3a"/>
+  <text x="450" y="502" fill="#ffffff" font-family="Arial" font-size="27" text-anchor="middle">&lt;footer&gt;</text>
+</svg>

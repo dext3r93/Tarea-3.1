@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laboratorio sobre la estructura básica y semántica de HTML5.">
+  <meta name="author" content="Emmanuel Figueroa Serrano">
+  <title>Laboratorio de HTML5</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- header identifica el encabezado principal de la página. -->
+  <header class="encabezado">
+    <img src="imagenes/html5-estructura.svg" alt="Ilustración de una página organizada con etiquetas semánticas de HTML5">
+    <div>
+      <p class="curso">WADE 1000L</p>
+      <h1>Creación de una página web básica</h1>
+      <p>Práctica de sintaxis, semántica y características de HTML5.</p>
+    </div>
+  </header>
+
+  <!-- nav agrupa los enlaces que permiten recorrer las secciones principales. -->
+  <nav aria-label="Navegación principal">
+    <ul>
+      <li><a href="#sintaxis">Sintaxis</a></li>
+      <li><a href="#semantica">Semántica</a></li>
+      <li><a href="#multimedia">Multimedia</a></li>
+      <li><a href="#ventajas">Ventajas</a></li>
+    </ul>
+  </nav>
+
+  <!-- main contiene el tema central y aparece una sola vez en el documento. -->
+  <main>
+    <!-- section reúne contenido relacionado bajo un encabezado. -->
+    <section id="sintaxis">
+      <h2>Sintaxis básica de HTML</h2>
+      <p>HTML organiza el contenido mediante elementos. La mayoría contiene una etiqueta de apertura, contenido y una etiqueta de cierre.</p>
+
+      <!-- article representa una explicación independiente dentro de la sección. -->
+      <article>
+        <h3>Elementos y atributos</h3>
+        <p>Los atributos añaden información a un elemento. En el siguiente enlace, el atributo <code>href</code> contiene la dirección y <code>target</code> indica dónde abrirla.</p>
+        <p><a href="https://github.com/TU-USUARIO/laboratorio-3-1" target="_blank" rel="noopener noreferrer">Visitar el repositorio del proyecto en GitHub</a></p>
+      </article>
+
+      <article>
+        <h3>Etiquetas practicadas</h3>
+        <ul>
+          <li>Encabezados para identificar títulos y subtítulos.</li>
+          <li>Párrafos para presentar información.</li>
+          <li>Listas para agrupar elementos relacionados.</li>
+          <li>Enlaces para conectar páginas y recursos.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="semantica">
+      <h2>Semántica de HTML5</h2>
+      <p>Las etiquetas semánticas describen el propósito del contenido. Un navegador o lector de pantalla puede distinguir la navegación, el contenido principal y el pie de página.</p>
+
+      <div class="tarjetas">
+        <article>
+          <h3>Contenido claro</h3>
+          <p>Las etiquetas <code>header</code>, <code>nav</code> y <code>main</code> indican la función de cada área.</p>
+        </article>
+        <article>
+          <h3>Mejor accesibilidad</h3>
+          <p>Una estructura lógica ayuda a las tecnologías de asistencia a recorrer la página.</p>
+        </article>
+        <article>
+          <h3>Mantenimiento directo</h3>
+          <p>Los nombres de las etiquetas facilitan la lectura y edición del código.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="multimedia">
+      <h2>Características de HTML5</h2>
+
+      <!-- figure relaciona una imagen con su descripción mediante figcaption. -->
+      <figure>
+        <img src="imagenes/html5-estructura.svg" alt="Diagrama de las áreas header, nav, main, article, section y footer">
+        <figcaption>Ejemplo visual de una estructura semántica de HTML5.</figcaption>
+      </figure>
+
+      <div class="multimedia-grid">
+        <article>
+          <h3>Video</h3>
+          <!-- video reproduce el MP4 del laboratorio cuando se añade a esta carpeta. -->
+          <video controls preload="metadata" poster="imagenes/html5-estructura.svg">
+            <source src="media/sample_video.mp4" type="video/mp4">
+            Tu navegador no admite video HTML5.
+          </video>
+          <p>El archivo MP4 de la grabación aparecerá aquí cuando se coloque junto al HTML.</p>
+        </article>
+
+        <article>
+          <h3>Audio</h3>
+          <!-- audio incorpora sonido sin depender de complementos externos. -->
+          <audio controls preload="metadata">
+            <source src="media/audio-html5.wav" type="audio/wav">
+            Tu navegador no admite audio HTML5.
+          </audio>
+          <p>Esta breve señal confirma que el elemento de audio funciona.</p>
+        </article>
+      </div>
+
+      <article>
+        <h3>Canvas</h3>
+        <!-- canvas crea gráficos mediante JavaScript dentro del navegador. -->
+        <canvas id="lienzo" width="760" height="220">
+          Tu navegador no admite el elemento canvas.
+        </canvas>
+        <p id="estado-canvas" role="status">El gráfico se genera al cargar la página.</p>
+      </article>
+    </section>
+
+    <section id="ventajas">
+      <h2>Ventajas de la estructura HTML5</h2>
+      <!-- Esta comparación explica las ventajas solicitadas en la rúbrica. -->
+      <article>
+        <h3>HTML genérico frente a HTML5 semántico</h3>
+        <p>Una estructura basada solo en elementos <code>div</code> no explica qué función cumple cada bloque. HTML5 ofrece etiquetas con significado, como <code>nav</code>, <code>article</code> y <code>footer</code>. Esto mejora la organización del código y ayuda a los lectores de pantalla. HTML5 también integra audio, video y gráficos sin exigir complementos adicionales. La página resulta más fácil de mantener porque cada área tiene un propósito visible.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- footer contiene información final sobre el autor y el proyecto. -->
+  <footer>
+    <p>Preparado por Emmanuel Figueroa Serrano para WADE 1000L.</p>
+    <p><a href="">Repositorio en GitHub</a></p>
+  </footer>
+
+  <script>
+    // Canvas forma parte de HTML5 y permite dibujar gráficos mediante JavaScript.
+    const lienzo = document.querySelector("#lienzo");
+    const contexto = lienzo.getContext("2d");
+
+    contexto.fillStyle = "#0f4c5c";
+    contexto.fillRect(0, 0, lienzo.width, lienzo.height);
+
+    contexto.fillStyle = "#ffffff";
+    contexto.font = "bold 28px Arial";
+    contexto.textAlign = "center";
+    contexto.fillText("HTML5 organiza el contenido con significado", lienzo.width / 2, 85);
+
+    contexto.font = "18px Arial";
+    contexto.fillText("header  nav  main  article  section  footer", lienzo.width / 2, 135);
+
+    contexto.fillStyle = "#e36414";
+    contexto.fillRect(190, 165, 380, 8);
+  </script>
+</body>
+</html>
