@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Laboratorio sobre la estructura básica y semántica de HTML5.">
+  <meta name="description" content="Creación de una página web estilizada con CSS">
   <meta name="author" content="Emmanuel Figueroa Serrano">
   <title>Laboratorio de HTML5</title>
   <link rel="stylesheet" href="css/estilos.css">
@@ -15,7 +15,7 @@
     <div>
       <p class="curso">WADE 1000L</p>
       <h1>Creación de una página web básica</h1>
-      <p>Práctica de sintaxis, semántica y características de HTML5.</p>
+      <p>Creación de una página web estilizada con CSS</p>
     </div>
   </header>
 
@@ -26,6 +26,9 @@
       <li><a href="#semantica">Semántica</a></li>
       <li><a href="#multimedia">Multimedia</a></li>
       <li><a href="#ventajas">Ventajas</a></li>
+      <li><a href="#selectores-css">Selectores CSS</a></li>
+      <li><a href="#modelo-caja">Modelo de caja</a></li>
+      <li><a href="#responsivo">Diseño responsivo</a></li>
     </ul>
   </nav>
 
@@ -123,6 +126,52 @@
         <p>Una estructura basada solo en elementos <code>div</code> no explica qué función cumple cada bloque. HTML5 ofrece etiquetas con significado, como <code>nav</code>, <code>article</code> y <code>footer</code>. Esto mejora la organización del código y ayuda a los lectores de pantalla. HTML5 también integra audio, video y gráficos sin exigir complementos adicionales. La página resulta más fácil de mantener porque cada área tiene un propósito visible.</p>
       </article>
     </section>
+
+    <!-- Esta sección demuestra selectores de elemento, clase e ID. -->
+    <section id="selectores-css">
+      <h2>Tipos de selectores CSS</h2>
+      <p>CSS permite seleccionar elementos de distintas formas.</p>
+
+      <div class="ejemplos-selectores">
+        <article class="tarjeta-css">
+          <h3>Selector de elemento</h3>
+          <p>El selector article aplica estilos a todos los artículos.</p>
+        </article>
+
+        <article class="tarjeta-css destacado">
+          <h3>Selector de clase</h3>
+          <p>La clase destacado modifica la apariencia de esta tarjeta.</p>
+        </article>
+
+        <article id="tarjeta-principal" class="tarjeta-css">
+          <h3>Selector de ID</h3>
+          <p>El ID tarjeta-principal identifica un solo elemento.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Esta sección demuestra content, padding, border y margin. -->
+  <section id="modelo-caja">
+    <h2>Modelo de caja de CSS</h2>
+    <p>Cada elemento está compuesto por contenido, relleno, borde y margen.</p>
+
+    <div class="caja-demostracion">
+      <h3>Ejemplo del modelo de caja</h3>
+      <p>
+        Este elemento contiene margen, relleno, borde, color de fondo
+        y un ancho definido.
+      </p>
+    </div>
+  </section>
+ 
+  <section id="responsivo">
+      <h2>Diseño responsivo</h2>
+      <p>
+        La distribución de esta página cambia cuando se visualiza en una
+        pantalla pequeña. Las columnas pasan a una sola columna y el
+        encabezado reorganiza sus elementos.
+      </p>
+</section>
   </main>
 
   <!-- footer contiene información final sobre el autor y el proyecto. -->

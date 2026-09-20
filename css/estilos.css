@@ -115,6 +115,54 @@ code {
   background: #e8eef1;
 }
 
+/* Selector de clase */
+.ejemplos-selectores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Selector de clase aplicado al modelo de caja */
+.tarjeta-css {
+  margin: 1rem 0;
+  padding: 1.25rem;
+  border: 2px solid var(--borde);
+  border-radius: 10px;
+  background: #f8fafb;
+}
+
+/* Un elemento puede usar más de una clase */
+.tarjeta-css.destacado {
+  border-color: var(--naranja);
+  background: #fff1e8;
+}
+
+/* Selector de ID para un elemento único */
+#tarjeta-principal {
+  color: var(--blanco);
+  border-color: var(--azul);
+  background: var(--azul);
+}
+
+#tarjeta-principal h3 {
+  color: #ffd6a5;
+}
+
+.caja-demostracion {
+  width: min(500px, 100%);
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 8px solid var(--naranja);
+  border-radius: 12px;
+  background: var(--azul-claro);
+  box-shadow: 12px 12px 0 var(--azul);
+}
+
+.caja-demostracion h3 {
+  margin-top: 0;
+  color: var(--azul);
+}
+
 .tarjetas,
 .multimedia-grid {
   display: grid;
